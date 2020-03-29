@@ -1,0 +1,161 @@
+* {box-sizing: content-box; font-family: Verdana; font-size: 16px; font-weight: normal; text-decoration: none; color: black}
+html {margin: 0; padding: 0}
+body {margin: 0; padding: 0}
+p {margin:0; padding: 0}
+
+
+#logo {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+}
+
+
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+
+
+.mainc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 15px;
+    margin-right: 15px;
+   
+    padding: 15px;
+    
+    flex: 1;
+    
+}
+
+
+#res {
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.nav {
+    display: flex;
+    flex-grow: 2;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.nav a {width: 75px}
+
+article {margin-left: 15px; 
+    margin-right: 15px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    
+   
+    }
+
+
+h2    {
+    height: 50px;
+    margin: 0;
+    width: 50%;
+    font-size: 1.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    align-self: flex-end;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color:  lightgray;
+}
+
+.text {
+    padding: 15px;
+}
+
+footer {
+    height: 100px;
+    background-color: lightgray;
+    border-top: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-end;
+    flex-shrink: 0;
+
+    
+}
+
+p#autor {font-weight: bold;}
+
+
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+   
+}
+.footer {
+  flex-shrink: 0;
+}
+
+
+#hamburger {
+    display:none;
+}
+
+
+@media all and (max-width: 900px) {
+ main {
+ flex-wrap: wrap;
+ }
+    #res {
+        display: none;
+    }
+    .nav {
+        display: none;
+    }
+      
+    
+   #logo
+    {
+        flex-direction: row;
+        display: inline-flex;
+        justify-self: flex-start;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+  
+   
+    #hamburger {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    justify-self: flex-end;  
+    
+    
+    }
+    
+    
+}
+
+
