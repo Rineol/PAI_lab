@@ -1,0 +1,43 @@
+﻿@{
+    //Layout = null;
+    var rules = new List<String>();
+
+    if(Session["rules"]!=null){
+        rules = (List<String>)Session["rules"];
+    }
+
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form action="~/Response.cshtml" method="post">
+            <label>
+
+                Reguła:<input type="text" name="rule" /><br />
+
+            </label>
+            <input type="submit">
+
+
+
+
+        </form>
+        @{ 
+                <ol>
+                    @foreach(var rule in rules)
+                    {
+                    <li>@rule</li>
+                    }
+                </ol>
+        }
+
+
+    </div>
+</body>
+</html>
